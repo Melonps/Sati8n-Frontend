@@ -1,0 +1,15 @@
+{
+    "userid": "U54256",
+    "email": "example.com",
+    "password": "123456"
+}
+
+{
+    "userid": "U54256",
+    "username": "John Doe",
+    "sex": "man",
+    "birthday": "1990-01-01",
+    "age": 30,
+    "heigh": 180,
+    "weight": 70,
+}
