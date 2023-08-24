@@ -44,9 +44,12 @@ const SignUp = () => {
 
     const createUserOnServer = async (uid) => {
         try {
-            const res = await axios.post("http://127.0.0.1:8000/create_user/", {
-                userid: uid,
-            });
+            const res = await axios.post(
+                "https://sati8n-backend.onrender.com/api/user",
+                {
+                    user_id: uid,
+                }
+            );
             if (res.status === 200) {
                 console.log("User created successfully");
             }

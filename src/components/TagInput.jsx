@@ -4,7 +4,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
-import { Typography, Grid } from "@mui/material";
+import { Typography, Grid, Box } from "@mui/material";
 
 const TagInput = ({ onTagsChange, options = [] }) => {
     // タグの状態管理
@@ -63,14 +63,25 @@ const TagInput = ({ onTagsChange, options = [] }) => {
             <Stack direction="column" spacing={1} marginTop={2}>
                 {tags.map((tagObj, index) => (
                     <Grid item xs={12} key={index}>
-                        <Typography variant="body1" sx={{ marginRight: 1 }}>
-                            {/* タグの表示と削除チップ */}
-                            {tagObj.tag} | {tagObj.count}×{tagObj.calories} kcal
+                        <Box
+                            sx={{
+                                display: "flex",
+                                justifyContent: "space-between",
+                                alignItems: "center",
+                            }}
+                        >
+                            <Typography variant="body1" sx={{ marginRight: 1 }}>
+                                {/* タグの表示と削除チップ */}
+                                {tagObj.tag} | {tagObj.count}×{tagObj.calories}{" "}
+                                kcal
+                            </Typography>
                             <Chip
                                 label="Delete"
                                 onDelete={() => handleDeleteTag(tagObj.tag)}
+                                sx={{ marginLeft: "auto" }} // Chipを右寄せにする
                             />
-                        </Typography>
+                        </Box>
+
                         {/* 数量を設定するスライダー */}
                         <Slider
                             value={tagObj.count}

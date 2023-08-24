@@ -19,7 +19,7 @@ import axios from "axios";
 
 import "../App.css";
 const data = {
-    userid: "test",
+    user_id: "71R6PkhG6IcYsyEE4pL3Y1R4Woo2",
     username: "test",
     bio: "test",
     state: 20,
@@ -39,6 +39,23 @@ function Home() {
     const handleNavigationChange = (event, newValue) => {
         setNavigationValue(newValue);
     };
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const res = await axios.get(
+                    `http://127.0.0.1:8000/get_user/${userId}`
+                );
+                if (res.status === 200) {
+                    console.log("User data fetched successfully");
+                    userProfileRef.current = res.data;
+                }
+            } catch (error) {
+                console.error("Error fetching user data:", error);
+            }
+        };
+        fetchData();
+    }, [userId]);
 
     return (
         <>

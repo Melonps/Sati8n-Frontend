@@ -30,10 +30,11 @@ const EditProfile = ({ userInfoRef }) => {
     const handleOpen = () => {
         setOpen(true);
         setUpdatedUserName(userInfoRef.current.username); // Set initial username
-        setUpdatedState(userInfoRef.current.state / 100); // Set initial state
-        setUpdatedTarget(userInfoRef.current.target / 100); // Set initial target
+        setUpdatedAge(userInfoRef.current.age); // Set initial age
+        setUpdatedHeight(userInfoRef.current.height); // Set initial height
+        setUpdatedWeight(userInfoRef.current.weight); // Set initial weight
+        setUpdatedSex(userInfoRef.current.sex);
         setUpdatedBio(userInfoRef.current.bio); // Set initial bio
-        setReceivedTags(userInfoRef.current.tag); // Set initial tags
     };
 
     const handleSexChange = (event, newAlignment) => {
@@ -46,26 +47,23 @@ const EditProfile = ({ userInfoRef }) => {
         setOpen(false);
         setError("");
     };
-
-    const formatCurrency = (value) => {
-        return `${value}kg`; // 金額を表示するフォーマットを追加
-    };
-
     const PostData = async () => {
         try {
             const response = await axios.post(
-                `http://127.0.0.1:8000/update_user`,
+                `https://sati8n-backend.onrender.com/api/user/profile`,
                 {
-                    userid: userInfoRef.current.userid,
-                    username: userInfoRef.current.username,
-                    state: userInfoRef.current.state,
-                    target: userInfoRef.current.target,
-                    tag: receivedTags,
+                    user_id: userInfoRef.current.user_id,
+                    user_name: userInfoRef.current.username,
+                    height: userInfoRef.current.height,
+                    weight: userInfoRef.current.weight,
+                    age: userInfoRef.current.age,
+                    sex: userInfoRef.current.sex,
                     bio: userInfoRef.current.bio,
                 }
             );
             if (response.status === 200) {
                 console.log("Trading record created successfully");
+                console.log(response.data);
             }
         } catch (error) {
             console.error("Error creating trading record:", error);
@@ -80,10 +78,11 @@ const EditProfile = ({ userInfoRef }) => {
         userInfoRef.current = {
             ...userInfoRef.current,
             username: updatedUserName,
-            state: updatedState * 10000,
-            target: updatedTarget * 10000,
+            height: updatedHeight,
+            weight: updatedWeight,
+            age: updatedAge,
+            sex: updatedSex,
             bio: updatedBio,
-            tag: receivedTags,
         };
         PostData();
         // Close the modal
@@ -175,8 +174,8 @@ const EditProfile = ({ userInfoRef }) => {
                                     value={updatedAge}
                                     valueLabelDisplay="auto"
                                     step={2}
-                                    min={0}
-                                    max={1000}
+                                    min={10}
+                                    max={70}
                                     onChange={(e) =>
                                         setUpdatedAge(e.target.value)
                                     }
@@ -184,7 +183,7 @@ const EditProfile = ({ userInfoRef }) => {
                             </Grid>
                             <Grid item xs={12}>
                                 <Typography id="range-slider" gutterBottom>
-                                    身長：{updatedHeight}kg
+                                    身長：{updatedHeight}cm
                                 </Typography>
                                 <Slider
                                     aria-label="Target"
