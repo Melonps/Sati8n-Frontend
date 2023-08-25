@@ -13,11 +13,14 @@ import {
 } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import RamenDiningIcon from "@mui/icons-material/RamenDining";
+import { getHours } from "date-fns";
 const RecordList = ({ data }) => {
     return (
         <div className="flex justify-center">
             <Box mt={4}>
-                <Typography variant="h4">食事内容</Typography>
+                <Typography variant="h4" sx={{ mb: 2 }}>
+                    Meal Timeline
+                </Typography>
                 <List
                     sx={{
                         width: "100%",
@@ -46,37 +49,39 @@ const RecordList = ({ data }) => {
                                 />
                                 <Box sx={{ ml: 2, mt: 2, flex: 1 }}>
                                     <Typography variant="h5">
-                                        {meal.name}
+                                        {meal.store_name}
                                     </Typography>
                                     <Typography variant="subtitle1">
                                         <RamenDiningIcon
                                             color="primary"
                                             fontSize="small"
                                         />
-                                        {meal.mealtype} - {meal.calory} kcal
+                                        {meal.meal_type} - {meal.total_calory}{" "}
+                                        kcal
                                     </Typography>
-                                    {meal.restaurant && (
+                                    {meal.dishes.map((dish) => (
+                                        <Chip
+                                            label={
+                                                dish.calory +
+                                                "×" +
+                                                dish.amount +
+                                                " kcal"
+                                            }
+                                            sx={{ mr: 1, mt: 1 }}
+                                        />
+                                    ))}
+                                </Box>
+                                <Box sx={{ ml: 2, mt: 2 }}>
+                                    {meal.created_at && (
                                         <Typography variant="subtitle2">
                                             <LocationOnIcon
                                                 color="primary"
                                                 fontSize="small"
                                             />
-                                            {meal.restaurant}
+                                            {meal.created_at.slice(0, 10)}|
+                                            {meal.created_at.slice(11, 16)}
                                         </Typography>
                                     )}
-                                    <Box sx={{ mt: 1 }}>
-                                        {Object.keys(meal.nutrients).map(
-                                            (nutrient, index) => (
-                                                <Chip
-                                                    key={index}
-                                                    label={nutrient}
-                                                    variant="outlined"
-                                                    size="small"
-                                                    sx={{ mr: 1, mb: 1 }}
-                                                />
-                                            )
-                                        )}
-                                    </Box>
                                 </Box>
                                 <Typography variant="subtitle1">
                                     {meal.time}

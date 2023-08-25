@@ -14,7 +14,7 @@ const COLORS = ["#9BA3B5", "#df929b"]; // Blue for goal, Green for current intak
 const MealSum = ({ goalCalories, data }) => {
     console.log(data);
     const currentCalories = data.reduce(
-        (accumulator, currentValue) => accumulator + currentValue.calory,
+        (accumulator, currentValue) => accumulator + currentValue.total_calory,
         0 // 初期値を指定
     );
     const calory_data = [

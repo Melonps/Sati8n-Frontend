@@ -10,7 +10,7 @@ import heroChar from "../assets/hero_char.png";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SignOut from "../components/SignOut";
-import PostTradingRecord from "../components/PostActivity";
+import PostRecord from "../components/PostActivity";
 import UserProfileComponent from "../components/UserProfile";
 import EditProfile from "../components/EditProfile";
 import DashBoard from "./DashBoard";
@@ -19,14 +19,14 @@ import axios from "axios";
 
 import "../App.css";
 const data = {
-    user_id: "71R6PkhG6IcYsyEE4pL3Y1R4Woo2",
-    username: "test",
+    user_id: "1234",
+    user_name: "test",
     bio: "test",
-    state: 20,
     height: 170,
     weight: 60,
-    sex: "male",
+    sex: "female",
     target: 2000,
+    age: 20,
 };
 
 function Home() {
@@ -34,7 +34,8 @@ function Home() {
     const userProfileRef = useRef(data);
 
     const location = useLocation();
-    const userId = location.state && location.state.userId;
+    const user_id = location.state && location.state.userId;
+    //const user_id = "1234";
 
     const handleNavigationChange = (event, newValue) => {
         setNavigationValue(newValue);
@@ -44,7 +45,7 @@ function Home() {
         const fetchData = async () => {
             try {
                 const res = await axios.get(
-                    `http://127.0.0.1:8000/get_user/${userId}`
+                    `https://sati8n-backend.onrender.com/api/user/profile?user_id=${user_id}`
                 );
                 if (res.status === 200) {
                     console.log("User data fetched successfully");
@@ -55,14 +56,16 @@ function Home() {
             }
         };
         fetchData();
-    }, [userId]);
+    }, [user_id]);
 
     return (
         <>
             <section className="section-container mx-64  w-full flex justify-center">
                 <MainLogo className="w-32 absolute left-8 top-8" />
                 <Box p={4}>
-                    {navigationValue === "analysis" && <DashBoard />}
+                    {navigationValue === "analysis" && (
+                        <DashBoard userInfoRef={userProfileRef} />
+                    )}
                     {navigationValue === "profile" && (
                         <UserProfileComponent userInfoRef={userProfileRef} />
                     )}
@@ -87,10 +90,7 @@ function Home() {
                     </BottomNavigation>
                     <EditProfile userInfoRef={userProfileRef} />
                     <SignOut />
-                    <PostTradingRecord
-                        userid={userId}
-                        username={userProfileRef.current?.username}
-                    />
+                    <PostRecord userInfoRef={userProfileRef} />
                 </Box>
             </section>
         </>

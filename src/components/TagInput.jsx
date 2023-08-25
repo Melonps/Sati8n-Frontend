@@ -42,18 +42,15 @@ const TagInput = ({ onTagsChange, options = [] }) => {
                 value={inputValue}
                 onChange={(_, newValue) => {
                     const selectedOption = options.find(
-                        (option) => Object.keys(option)[0] === newValue
+                        (option) => option.Item === newValue
                     );
                     if (selectedOption) {
-                        handleTagAction(
-                            newValue,
-                            selectedOption[Object.keys(selectedOption)[0]]
-                        );
+                        handleTagAction(newValue, selectedOption.Calories);
                     }
                 }}
                 inputValue={inputValue}
                 onInputChange={handleInputChange}
-                options={options.map((option) => Object.keys(option)[0])}
+                options={options.map((option) => option.Item)}
                 freeSolo
                 renderInput={(params) => (
                     <TextField {...params} label="食べ物" variant="outlined" />
@@ -81,7 +78,6 @@ const TagInput = ({ onTagsChange, options = [] }) => {
                                 sx={{ marginLeft: "auto" }} // Chipを右寄せにする
                             />
                         </Box>
-
                         {/* 数量を設定するスライダー */}
                         <Slider
                             value={tagObj.count}
@@ -94,7 +90,7 @@ const TagInput = ({ onTagsChange, options = [] }) => {
                             valueLabelDisplay="auto"
                             step={1}
                             min={1}
-                            max={10}
+                            max={3}
                         />
                     </Grid>
                 ))}
