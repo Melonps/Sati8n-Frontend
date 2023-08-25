@@ -65,6 +65,7 @@ const EditProfile = ({ userInfoRef }) => {
                 console.log("Trading record created successfully");
                 console.log(response.data);
             }
+            console.log(response.data);
         } catch (error) {
             console.error("Error creating trading record:", error);
             setError("Error creating trading record. Please try again.");

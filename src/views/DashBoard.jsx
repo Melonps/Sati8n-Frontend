@@ -109,7 +109,7 @@ export default DashBoard;
 const nutrients = {
     Protein: 60,
     Carbohydrates: 40,
-    Fat: 30,
+    Fat: 70,
     Vitamins: 50,
-    Minerals: 70,
+    Minerals: 30,
 };

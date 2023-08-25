@@ -19,12 +19,12 @@ import axios from "axios";
 
 import "../App.css";
 const data = {
-    user_id: "1234",
-    user_name: "test",
-    bio: "test",
+    user_id: "AE45562AEB45",
+    user_name: "Guest User",
+    bio: "I am a greatest guest user.",
     height: 170,
     weight: 60,
-    sex: "female",
+    sex: "male",
     target: 2000,
     age: 20,
 };
