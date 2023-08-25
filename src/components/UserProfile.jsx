@@ -7,7 +7,6 @@ import {
     Typography,
     Chip,
 } from "@mui/material";
-import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
 import FlagIcon from "@mui/icons-material/Flag"; /*  */
 import AllInboxIcon from "@mui/icons-material/AllInbox";
@@ -15,7 +14,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 const UserProfileComponent = ({ userInfoRef }) => {
     const avatarUrl = `https://cat-avatars.vercel.app/api/cat?name=${encodeURIComponent(
-        userInfoRef.current.userid
+        userInfoRef.current.user_name
     )}`;
     return (
         <Box p={2} sx={{ mt: 2, mb: 2, minWidth: 600 }}>
@@ -50,10 +49,10 @@ const UserProfileComponent = ({ userInfoRef }) => {
                         <Grid item>
                             <Box textAlign="center">
                                 <Typography variant="h5">
-                                    {userInfoRef.current.username}
+                                    {userInfoRef.current.user_name}
                                 </Typography>
                                 <Typography variant="body2">
-                                    @{userInfoRef.current.userid}
+                                    @{userInfoRef.current.user_id}
                                 </Typography>
                             </Box>
                         </Grid>

@@ -24,10 +24,19 @@ const COLORS = [
 const AreaGraph = ({ data }) => {
     // グラデーションのIDを生成
     const gradientId = "caloryGradient";
+    const update_data = data.map((item) => {
+        const createdAt = new Date(item.created_at);
+        const hour = createdAt.getHours();
+        const minute = createdAt.getMinutes();
+        return {
+            ...item,
+            time: hour + ":" + minute,
+        };
+    });
 
     return (
         <ResponsiveContainer minWidth={150} width="80%" height={200}>
-            <AreaChart data={data}>
+            <AreaChart data={update_data}>
                 <defs>
                     {/* 線形グラデーションを定義 */}
                     <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
@@ -54,7 +63,7 @@ const AreaGraph = ({ data }) => {
                 <Legend />
                 <Area
                     type="monotone"
-                    dataKey="calory"
+                    dataKey="total_calory"
                     stroke={COLORS[0]}
                     fill={`url(#${gradientId})`} // グラデーションを適用
                     activeDot={{ r: 8 }}

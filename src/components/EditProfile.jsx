@@ -49,11 +49,11 @@ const EditProfile = ({ userInfoRef }) => {
     };
     const PostData = async () => {
         try {
-            const response = await axios.post(
+            const response = await axios.put(
                 `https://sati8n-backend.onrender.com/api/user/profile`,
                 {
                     user_id: userInfoRef.current.user_id,
-                    user_name: userInfoRef.current.username,
+                    user_name: userInfoRef.current.user_name,
                     height: userInfoRef.current.height,
                     weight: userInfoRef.current.weight,
                     age: userInfoRef.current.age,
@@ -61,7 +61,7 @@ const EditProfile = ({ userInfoRef }) => {
                     bio: userInfoRef.current.bio,
                 }
             );
-            if (response.status === 200) {
+            if (response.status === 201) {
                 console.log("Trading record created successfully");
                 console.log(response.data);
             }
@@ -77,7 +77,7 @@ const EditProfile = ({ userInfoRef }) => {
         // Update userInfoRef with new values
         userInfoRef.current = {
             ...userInfoRef.current,
-            username: updatedUserName,
+            user_name: updatedUserName,
             height: updatedHeight,
             weight: updatedWeight,
             age: updatedAge,
@@ -149,14 +149,17 @@ const EditProfile = ({ userInfoRef }) => {
                                     exclusive
                                     color="primary"
                                     onChange={handleSexChange}
-                                    aria-label="Buy or Sell"
+                                    aria-label="male or female"
                                 >
-                                    <ToggleButton value="buy" aria-label="Buy">
+                                    <ToggleButton
+                                        value="male"
+                                        aria-label="female"
+                                    >
                                         <MaleIcon sx={{ marginLeft: "5px" }} />{" "}
                                     </ToggleButton>
                                     <ToggleButton
-                                        value="sell"
-                                        aria-label="Sell"
+                                        value="female"
+                                        aria-label="female"
                                     >
                                         <FemaleIcon
                                             sx={{ marginLeft: "5px" }}

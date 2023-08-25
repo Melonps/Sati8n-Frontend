@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { styled } from "@mui/system";
-import { Box, Avatar, Typography } from "@mui/material";
+import { Box, Avatar, Typography, IconButton } from "@mui/material";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const StoryContainer = styled(Box)({
     display: "flex",
@@ -23,9 +25,11 @@ const Icon = styled("div")(({ theme, selected }) => ({
 }));
 
 const data = [
-    { id: 1, username: "user1" },
-    { id: 2, username: "user2" },
-    { id: 3, username: "user3" },
+    { id: 1, username: "Kusumi" },
+    { id: 2, username: "Banri" },
+    { id: 3, username: "Kosuke" },
+    { id: 4, username: "Kaize" },
+    { id: 5, username: "Matsugane" },
     // ...add more data
 ];
 
@@ -38,6 +42,9 @@ function StoryComponent() {
 
     return (
         <StoryContainer>
+            <IconButton>
+                <KeyboardArrowLeftIcon />
+            </IconButton>
             {data.map((item) => (
                 <Icon
                     key={item.id}
@@ -58,6 +65,9 @@ function StoryComponent() {
                     <Typography variant="caption">{item.username}</Typography>
                 </Icon>
             ))}
+            <IconButton>
+                <KeyboardArrowRightIcon />
+            </IconButton>
         </StoryContainer>
     );
 }

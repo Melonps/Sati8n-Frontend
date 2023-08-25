@@ -1,0 +1,462 @@
+[
+    {
+        "Unnamed: 0": 0,
+        "Item": "Cool Lime Starbucks Refreshers\u2122 Beverage",
+        "Calories": 45
+    },
+    {
+        "Unnamed: 0": 1,
+        "Item": "Strawberry Acai Starbucks Refreshers\u2122 Beverage",
+        "Calories": 80
+    },
+    {
+        "Unnamed: 0": 2,
+        "Item": "Very Berry Hibiscus Starbucks Refreshers\u2122 Beverage",
+        "Calories": 60
+    },
+    {
+        "Unnamed: 0": 3,
+        "Item": "Evolution Fresh\u2122 Organic Ginger Limeade",
+        "Calories": 110
+    },
+    {
+        "Unnamed: 0": 4,
+        "Item": "Iced Coffee",
+        "Calories": 0
+    },
+    {
+        "Unnamed: 0": 5,
+        "Item": "Iced Espresso Classics - Vanilla Latte",
+        "Calories": 130
+    },
+    {
+        "Unnamed: 0": 6,
+        "Item": "Iced Espresso Classics - Caffe Mocha",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 7,
+        "Item": "Iced Espresso Classics - Caramel Macchiato",
+        "Calories": 130
+    },
+    {
+        "Unnamed: 0": 8,
+        "Item": "Shaken Sweet Tea",
+        "Calories": 80
+    },
+    {
+        "Unnamed: 0": 9,
+        "Item": "Tazo\u00ae Bottled Berry Blossom White",
+        "Calories": 60
+    },
+    {
+        "Unnamed: 0": 10,
+        "Item": "Tazo\u00ae Bottled Black Mango",
+        "Calories": 150
+    },
+    {
+        "Unnamed: 0": 11,
+        "Item": "Tazo\u00ae Bottled Black with Lemon",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 12,
+        "Item": "Tazo\u00ae Bottled Brambleberry",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 13,
+        "Item": "Tazo\u00ae Bottled Giant Peach",
+        "Calories": 150
+    },
+    {
+        "Unnamed: 0": 14,
+        "Item": "Tazo\u00ae Bottled Iced Passion",
+        "Calories": 70
+    },
+    {
+        "Unnamed: 0": 15,
+        "Item": "Tazo\u00ae Bottled Lemon Ginger",
+        "Calories": 120
+    },
+    {
+        "Unnamed: 0": 16,
+        "Item": "Tazo\u00ae Bottled Organic Black Lemonade",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 17,
+        "Item": "Tazo\u00ae Bottled Organic Iced Black Tea",
+        "Calories": 60
+    },
+    {
+        "Unnamed: 0": 18,
+        "Item": "Tazo\u00ae Bottled Organic Iced Green Tea",
+        "Calories": 120
+    },
+    {
+        "Unnamed: 0": 19,
+        "Item": "Tazo\u00ae Bottled Plum Pomegranate",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 20,
+        "Item": "Tazo\u00ae Bottled Tazoberry",
+        "Calories": 150
+    },
+    {
+        "Unnamed: 0": 21,
+        "Item": "Tazo\u00ae Bottled White Cranberry",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 22,
+        "Item": "Teavana\u00ae Shaken Iced Black Tea",
+        "Calories": 30
+    },
+    {
+        "Unnamed: 0": 23,
+        "Item": "Teavana\u00ae Shaken Iced Black Tea Lemonade",
+        "Calories": 70
+    },
+    {
+        "Unnamed: 0": 24,
+        "Item": "Teavana\u00ae Shaken Iced Green Tea",
+        "Calories": 30
+    },
+    {
+        "Unnamed: 0": 25,
+        "Item": "Teavana\u00ae Shaken Iced Green Tea Lemonade",
+        "Calories": 70
+    },
+    {
+        "Unnamed: 0": 26,
+        "Item": "Teavana\u00ae Shaken Iced Passion Tango\u2122 Tea",
+        "Calories": 30
+    },
+    {
+        "Unnamed: 0": 27,
+        "Item": "Teavana\u00ae Shaken Iced Passion Tango\u2122 Tea Lemonade",
+        "Calories": 90
+    },
+    {
+        "Unnamed: 0": 28,
+        "Item": "Teavana\u00ae Shaken Iced Peach Green Tea",
+        "Calories": 60
+    },
+    {
+        "Unnamed: 0": 29,
+        "Item": "Iced Espresso Classics - Vanilla Latte",
+        "Calories": 130
+    },
+    {
+        "Unnamed: 0": 30,
+        "Item": "Iced Espresso Classics - Caffe Mocha",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 31,
+        "Item": "Iced Espresso Classics - Caramel Macchiato",
+        "Calories": 130
+    },
+    {
+        "Unnamed: 0": 32,
+        "Item": "Starbucks Refreshers\u2122 Raspberry Pomegranate",
+        "Calories": 90
+    },
+    {
+        "Unnamed: 0": 33,
+        "Item": "Starbucks Refreshers\u2122 Strawberry Lemonade",
+        "Calories": 90
+    },
+    {
+        "Unnamed: 0": 34,
+        "Item": "Starbucks\u00ae Doubleshot Protein Dark Chocolate",
+        "Calories": 210
+    },
+    {
+        "Unnamed: 0": 35,
+        "Item": "Starbucks\u00ae Doubleshot Protein Vanilla",
+        "Calories": 200
+    },
+    {
+        "Unnamed: 0": 36,
+        "Item": "Starbucks\u00ae Iced Coffee Caramel",
+        "Calories": 60
+    },
+    {
+        "Unnamed: 0": 37,
+        "Item": "Starbucks\u00ae Iced Coffee Light Sweetened",
+        "Calories": 50
+    },
+    {
+        "Unnamed: 0": 38,
+        "Item": "Starbucks\u00ae Iced Coffee Unsweetened",
+        "Calories": 10
+    },
+    {
+        "Unnamed: 0": 39,
+        "Item": "Tazo\u00ae Bottled Berry Blossom White",
+        "Calories": 60
+    },
+    {
+        "Unnamed: 0": 40,
+        "Item": "Tazo\u00ae Bottled Black Mango",
+        "Calories": 150
+    },
+    {
+        "Unnamed: 0": 41,
+        "Item": "Tazo\u00ae Bottled Black with Lemon",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 42,
+        "Item": "Tazo\u00ae Bottled Brambleberry",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 43,
+        "Item": "Tazo\u00ae Bottled Giant Peach",
+        "Calories": 150
+    },
+    {
+        "Unnamed: 0": 44,
+        "Item": "Tazo\u00ae Bottled Iced Passion",
+        "Calories": 70
+    },
+    {
+        "Unnamed: 0": 45,
+        "Item": "Tazo\u00ae Bottled Lemon Ginger",
+        "Calories": 120
+    },
+    {
+        "Unnamed: 0": 46,
+        "Item": "Tazo\u00ae Bottled Organic Black Lemonade",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 47,
+        "Item": "Tazo\u00ae Bottled Organic Iced Black Tea",
+        "Calories": 60
+    },
+    {
+        "Unnamed: 0": 48,
+        "Item": "Tazo\u00ae Bottled Organic Iced Green Tea",
+        "Calories": 120
+    },
+    {
+        "Unnamed: 0": 49,
+        "Item": "Tazo\u00ae Bottled Plum Pomegranate",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 50,
+        "Item": "Tazo\u00ae Bottled Tazoberry",
+        "Calories": 150
+    },
+    {
+        "Unnamed: 0": 51,
+        "Item": "Tazo\u00ae Bottled White Cranberry",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 52,
+        "Item": "Blonde Roast",
+        "Calories": 5
+    },
+    {
+        "Unnamed: 0": 53,
+        "Item": "Clover\u00ae Brewed Coffee",
+        "Calories": 10
+    },
+    {
+        "Unnamed: 0": 54,
+        "Item": "Decaf Pike Place\u00ae Roast",
+        "Calories": 5
+    },
+    {
+        "Unnamed: 0": 55,
+        "Item": "Featured Dark Roast",
+        "Calories": 5
+    },
+    {
+        "Unnamed: 0": 56,
+        "Item": "Iced Coffee",
+        "Calories": 5
+    },
+    {
+        "Unnamed: 0": 57,
+        "Item": "Nari\u00f1o 70 Cold Brew",
+        "Calories": 5
+    },
+    {
+        "Unnamed: 0": 58,
+        "Item": "Nari\u00f1o 70 Cold Brew with Milk",
+        "Calories": 0
+    },
+    {
+        "Unnamed: 0": 59,
+        "Item": "Nitro Cold Brew",
+        "Calories": 5
+    },
+    {
+        "Unnamed: 0": 60,
+        "Item": "Nitro Cold Brew with Sweet Cream",
+        "Calories": 70
+    },
+    {
+        "Unnamed: 0": 61,
+        "Item": "Pike Place\u00ae Roast",
+        "Calories": 5
+    },
+    {
+        "Unnamed: 0": 62,
+        "Item": "Vanilla Sweet Cream Cold Brew",
+        "Calories": 110
+    },
+    {
+        "Unnamed: 0": 63,
+        "Item": "Hot Chocolate",
+        "Calories": 320
+    },
+    {
+        "Unnamed: 0": 64,
+        "Item": "Starbucks\u00ae Signature Hot Chocolate",
+        "Calories": 430
+    },
+    {
+        "Unnamed: 0": 65,
+        "Item": "Caff\u00e8 Latte",
+        "Calories": 190
+    },
+    {
+        "Unnamed: 0": 66,
+        "Item": "Caff\u00e8 Mocha",
+        "Calories": 290
+    },
+    {
+        "Unnamed: 0": 67,
+        "Item": "Cappuccino",
+        "Calories": 120
+    },
+    {
+        "Unnamed: 0": 68,
+        "Item": "Caramel Macchiato",
+        "Calories": 250
+    },
+    {
+        "Unnamed: 0": 69,
+        "Item": "Cinnamon Dolce Latte",
+        "Calories": 260
+    },
+    {
+        "Unnamed: 0": 70,
+        "Item": "Coconutmilk Mocha Macchiato",
+        "Calories": 250
+    },
+    {
+        "Unnamed: 0": 71,
+        "Item": "Flat White",
+        "Calories": 180
+    },
+    {
+        "Unnamed: 0": 72,
+        "Item": "Iced Caff\u00e8 Latte",
+        "Calories": 130
+    },
+    {
+        "Unnamed: 0": 73,
+        "Item": "Iced Caff\u00e8 Mocha",
+        "Calories": 230
+    },
+    {
+        "Unnamed: 0": 74,
+        "Item": "Iced Caramel Macchiato",
+        "Calories": 250
+    },
+    {
+        "Unnamed: 0": 75,
+        "Item": "Iced Cinnamon Dolce Latte",
+        "Calories": 200
+    },
+    {
+        "Unnamed: 0": 76,
+        "Item": "Iced Coconutmilk Mocha Macchiato",
+        "Calories": 260
+    },
+    {
+        "Unnamed: 0": 77,
+        "Item": "Iced Vanilla Latte",
+        "Calories": 190
+    },
+    {
+        "Unnamed: 0": 78,
+        "Item": "Iced White Chocolate Mocha",
+        "Calories": 300
+    },
+    {
+        "Unnamed: 0": 79,
+        "Item": "Latte Macchiato",
+        "Calories": 190
+    },
+    {
+        "Unnamed: 0": 80,
+        "Item": "Latte Macchiato",
+        "Calories": 190
+    },
+    {
+        "Unnamed: 0": 81,
+        "Item": "Starbucks Doubleshot\u00ae on Ice Beverage",
+        "Calories": 45
+    },
+    {
+        "Unnamed: 0": 82,
+        "Item": "Vanilla Latte",
+        "Calories": 250
+    },
+    {
+        "Unnamed: 0": 83,
+        "Item": "White Chocolate Mocha",
+        "Calories": 360
+    },
+    {
+        "Unnamed: 0": 84,
+        "Item": "Cinnamon Dolce Frappuccino\u00ae Blended Coffee",
+        "Calories": 350
+    },
+    {
+        "Unnamed: 0": 85,
+        "Item": "Coffee Light Frappuccino\u00ae Blended Coffee",
+        "Calories": 110
+    },
+    {
+        "Unnamed: 0": 86,
+        "Item": "Mocha Frappuccino\u00ae Blended Coffee",
+        "Calories": 280
+    },
+    {
+        "Unnamed: 0": 87,
+        "Item": "Mocha Light Frappuccino\u00ae Blended Coffee",
+        "Calories": 140
+    },
+    {
+        "Unnamed: 0": 88,
+        "Item": "Cinnamon Dolce Cr\u00e8me",
+        "Calories": 200
+    },
+    {
+        "Unnamed: 0": 89,
+        "Item": "Vanilla Cr\u00e8me",
+        "Calories": 200
+    },
+    {
+        "Unnamed: 0": 90,
+        "Item": "Chocolate Smoothie",
+        "Calories": 320
+    },
+    {
+        "Unnamed: 0": 91,
+        "Item": "Strawberry Smoothie",
+        "Calories": 300
+    }
+]
