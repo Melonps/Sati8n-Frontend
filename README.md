@@ -1,14 +1,14 @@
 
-![Frame 11](https://github.com/Melonps/WithTra-Frontend/assets/95263124/210a0492-b76c-4ed9-9a84-395d744914ad)
+![Frame 7](https://github.com/Melonps/Sati8n-Frontend/assets/95263124/ddfe5c7a-36a5-4222-bbbc-62c839257e71)
 
-![Frame 6](https://github.com/Melonps/WithTra-Frontend/assets/95263124/77bcfcf8-900d-4ad6-969f-02557599c507)
+![Slide 16_9 - 1](https://github.com/Melonps/Sati8n-Frontend/assets/95263124/34cbc4ef-3887-4a0d-a812-c3cd6b6fe137)
 
-# WITHTRA-FRONTEND
+# Sati8n-FRONTEND
 
 このリポジトリは、WITHTRA-FRONTEND プロジェクトの一部です。以下に、このプロジェクトのセットアップ手順と必要な設定について説明します。
 
 ## 必要な設定
-プロジェクトを実行するために、様々な .env ファイルが必要です。以下のFirebase関連のキー情報を .env ファイルに入力してください。これらの情報はFirebaseのプロジェクト設定から取得できるものであり、正確な情報を入力することが重要です。
+以下のFirebase関連のキー情報を .env ファイルに入力してください。
 
 ```
 VITE_FIREBASE_API_KEY="Your_Firebase_API_Key"
@@ -26,7 +26,7 @@ VITE_FIREBASE_DATABASE_URL="Your_Firebase_Database_url"
 1. プロジェクトディレクトリに移動します。
 
     ```shell
-    cd WITHTRA-FRONTEND
+    cd Sati8n-Frontend
     ```
 
 2. 必要なモジュールをインストールします。
@@ -40,4 +40,5 @@ VITE_FIREBASE_DATABASE_URL="Your_Firebase_Database_url"
     ```shell
     npm start
     ```
-上記コマンドを実行することで、プロジェクトがローカル環境で起動します。ウェブブラウザで http://localhost:5173 にアクセスすると、アプリケーションが表示されます。
+上記コマンドを実行することで、プロジェクトがローカル環境で起動。
+ウェブブラウザで http://localhost:5173 にアクセスすると、アプリケーションが表示されます。
